@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top Menu Item -->
+    <menuitem id="menu_uavt_root"
+        name="TR UAVT"
+        sequence="10"/>
+
+    <!-- First Level Menu -->
+    <menuitem id="menu_uavt_management"
+        name="Address Management"
+        parent="menu_uavt_root"
+        sequence="10"/>
+
+    <!-- Second Level Menu Items -->
+    <menuitem id="menu_uavt_ilce_list"
+        name="Counties"
+        parent="menu_uavt_management"
+        action="action_uavt_ilce"
+        sequence="10"/>
+
+    <menuitem id="menu_uavt_koy_list"
+        name="Villages" 
+        parent="menu_uavt_management"
+        action="action_uavt_koy"
+        sequence="20"/>
+
+    <!-- Configuration Menu -->
+    <menuitem id="menu_uavt_configuration"
+        name="Configuration"
+        parent="menu_uavt_root"
+        sequence="99"/>
+</odoo>

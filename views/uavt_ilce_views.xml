@@ -1,0 +1,35 @@
+<odoo>
+    <record id="view_uavt_ilce_form" model="ir.ui.view">
+        <field name="name">uavt.ilce.form</field>
+        <field name="model">uavt.ilce</field>
+        <field name="arch" type="xml">
+            <form string="County">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="il_kod"/>
+                        <field name="kod"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_uavt_ilce_list" model="ir.ui.view">
+        <field name="name">uavt.ilce.tree</field>
+        <field name="model">uavt.ilce</field>
+        <field name="arch" type="xml">
+            <list string="Districts">
+                <field name="name"/>
+                <field name="il_kod"/>
+                <field name="kod"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_uavt_ilce" model="ir.actions.act_window">
+        <field name="name">Counties</field>
+        <field name="res_model">uavt.ilce</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

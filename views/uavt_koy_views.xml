@@ -1,0 +1,41 @@
+<odoo>
+    <record id="view_uavt_koy_form" model="ir.ui.view">
+        <field name="name">uavt.koy.form</field>
+        <field name="model">uavt.koy</field>
+        <field name="arch" type="xml">
+            <form string="Village">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="ilce_id"/>
+                        <field name="kod"/>
+                        <field name="sirano"/>
+                        <field name="koyad"/>
+                        <field name="koykod"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_uavt_koy_tree" model="ir.ui.view">
+        <field name="name">uavt.koy.tree</field>
+        <field name="model">uavt.koy</field>
+        <field name="arch" type="xml">
+            <list string="Villages">
+                <field name="name"/>
+                <field name="ilce_id"/>
+                <field name="kod"/>
+                <field name="sirano"/>
+                <field name="koyad"/>
+                <field name="koykod"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_uavt_koy" model="ir.actions.act_window">
+        <field name="name">Villages</field>
+        <field name="res_model">uavt.koy</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_uavt_ilce,uavt.ilce,model_uavt_ilce,,1,1,1,1
+access_uavt_koy,uavt.koy,model_uavt_koy,,1,1,1,1
+access_uavt_mahalle,uavt.mahalle,model_uavt_mahalle,,1,1,1,1
+access_uavt_sokak,uavt.sokak,model_uavt_sokak,,1,1,1,1
