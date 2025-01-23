@@ -1,0 +1,91 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tr_uavt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-15 12:00+0000\n"
+"PO-Revision-Date: 2024-01-15 12:00+0000\n"
+"Last-Translator: Ufuk Togay\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: tr\n"
+
+#. module: tr_uavt
+#: model:ir.ui.menu,name:tr_uavt.menu_uavt_root
+msgid "TR UAVT"
+msgstr "TR UAVT"
+
+#. module: tr_uavt
+#: model:ir.ui.menu,name:tr_uavt.menu_uavt_management
+msgid "Address Management"
+msgstr "Adres Yönetimi"
+
+#. module: tr_uavt
+#: model:ir.ui.menu,name:tr_uavt.menu_uavt_configuration
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#. module: tr_uavt
+#: model:ir.model,name:tr_uavt.model_uavt_ilce
+#: model:ir.actions.act_window,name:tr_uavt.action_uavt_ilce
+#: model:ir.ui.menu,name:tr_uavt.menu_uavt_ilce_list
+msgid "Counties"
+msgstr "İlçeler"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_ilce__name
+msgid "Name"
+msgstr "İlçe"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_ilce__il_kod
+msgid "City"
+msgstr "İl"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_ilce__kod
+msgid "Code"
+msgstr "Kod"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_ilce__ilce_kod
+msgid "County Code"
+msgstr "İlçe Kodu"
+
+#. module: tr_uavt
+#: model:ir.model,name:tr_uavt.model_uavt_koy
+#: model:ir.actions.act_window,name:tr_uavt.action_uavt_koy
+#: model:ir.ui.menu,name:tr_uavt.menu_uavt_koy_list
+msgid "Villages"
+msgstr "Köyler"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__ilce_id
+msgid "County"
+msgstr "İlçe"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__sirano
+msgid "Order Number"
+msgstr "Sıra No"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__koyad
+msgid "Village Name"
+msgstr "Köy Adı"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__koykod
+msgid "Village Code"
+msgstr "Köy Kodu"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__ilce_kod
+msgid "County Code"
+msgstr "İlçe Kodu"
