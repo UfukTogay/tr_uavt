@@ -17,4 +17,5 @@
     ],
     'installable': True,
     'application': True,
+    'i18n': ['i18n/tr.po'],
 }
