@@ -8,7 +8,7 @@
                     <group>
                         <field name="name"/>
                         <field name="il_kod"/>
-                        <field name="kod"/>
+                        <field name="uavt_kodu"/>
                     </group>
                 </sheet>
             </form>
@@ -16,13 +16,13 @@
     </record>
 
     <record id="view_uavt_ilce_list" model="ir.ui.view">
-        <field name="name">uavt.ilce.tree</field>
+        <field name="name">uavt.ilce.list</field>
         <field name="model">uavt.ilce</field>
         <field name="arch" type="xml">
-            <list string="Districts">
+            <list string="Counties">
                 <field name="name"/>
                 <field name="il_kod"/>
-                <field name="kod"/>
+                <field name="uavt_kodu"/>
             </list>
         </field>
     </record>

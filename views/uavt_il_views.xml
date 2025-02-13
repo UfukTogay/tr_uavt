@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View with Counties Child Table -->
+    <record id="view_uavt_country_state_form_inherit" model="ir.ui.view">
+        <field name="name">res.country.state.form.uavt.inherit</field>
+        <field name="model">res.country.state</field>
+        <field name="inherit_id" ref="base.view_country_state_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="inside">
+                <notebook>
+                    <page string="Counties" name="counties">
+                        <field name="ilce_ids">
+                            <list>
+                                <field name="name"/>
+                                <field name="uavt_kodu"/>
+                            </list>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Tree View for Cities -->
+    <record id="view_res_country_state_tree_inherit" model="ir.ui.view">
+        <field name="name">res.country.state.tree.inherit</field>
+        <field name="model">res.country.state</field>
+        <field name="inherit_id" ref="base.view_country_state_tree"/>
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="ilce_count" string="County Count"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Action for Turkish Cities -->
+    <record id="action_res_country_state_tr" model="ir.actions.act_window">
+        <field name="name">Cities</field>
+        <field name="res_model">res.country.state</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('country_id.code', '=', 'TR')]</field>
+        <field name="context">{'default_country_id': ref('base.tr')}</field>
+    </record>
+
+</odoo>

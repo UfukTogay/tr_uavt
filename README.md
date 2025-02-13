@@ -8,9 +8,9 @@ Odoo module for managing Turkish National Address Database (UAVT - Ulusal Adres 
 ## Features ✨
 
 - Manage Turkish administrative divisions:
-  - Cities (İl) Mapped to Odoo's `res.country.state` model. These represent the 81 cities/provinces (iller) of Turkey in the address management system.
+  - Cities (İl) Mapped to Odoo's `res.country.state` model. These represent the 81 cities/provinces (iller) of Türkiye in the address management system.
   - Counties (İlçe/Semt)
-  - Districts (Mahalle)
+  - Districts (Mahalle & Köyler)
   - Streets (Sokak/Cadde)
 - Integration with Odoo's base localization
 - Support for Turkish characters
@@ -72,3 +72,5 @@ Contributions, issues, and feature requests are welcome!
 ## Footer
 
 Thank you for using the Türkiye Ulusal Adres Veritabanı (TR UAVT) module!
+
+Please support my country's efforts to ensure the global use of its official name, Türkiye.

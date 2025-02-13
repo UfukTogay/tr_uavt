@@ -8,7 +8,7 @@
                     <group>
                         <field name="name"/>
                         <field name="ilce_id"/>
-                        <field name="kod"/>
+                        <field name="uavt_kodu"/>  <!-- Changed from kod -->
                         <field name="sirano"/>
                         <field name="koyad"/>
                         <field name="koykod"/>
@@ -25,7 +25,7 @@
             <list string="Villages">
                 <field name="name"/>
                 <field name="ilce_id"/>
-                <field name="kod"/>
+                <field name="uavt_kodu"/>  <!-- Changed from kod -->
                 <field name="sirano"/>
                 <field name="koyad"/>
                 <field name="koykod"/>

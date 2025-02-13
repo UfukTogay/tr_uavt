@@ -49,14 +49,9 @@ msgid "City"
 msgstr "İl"
 
 #. module: tr_uavt
-#: model:ir.model.fields,field_description:tr_uavt.field_uavt_ilce__kod
-msgid "Code"
-msgstr "Kod"
-
-#. module: tr_uavt
-#: model:ir.model.fields,field_description:tr_uavt.field_uavt_ilce__ilce_kod
-msgid "County Code"
-msgstr "İlçe Kodu"
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_ilce__uavt_kodu
+msgid "UAVT Code"
+msgstr "UAVT Kodu"
 
 #. module: tr_uavt
 #: model:ir.model,name:tr_uavt.model_uavt_koy
@@ -83,9 +78,30 @@ msgstr "Köy Adı"
 #. module: tr_uavt
 #: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__koykod
 msgid "Village Code"
-msgstr "Köy Kodu"
+msgstr "Köy UAVT Kodu"
 
 #. module: tr_uavt
-#: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__ilce_kod
+#: model:ir.model.fields,field_description:tr_uavt.field_uavt_koy__uavt_kodu
 msgid "County Code"
-msgstr "İlçe Kodu"
+msgstr "İlçe UAVT Kodu"
+
+#. module: tr_uavt
+#: model:ir.model.constraint,message:tr_uavt.constraint_uavt_ilce_unique_name_il
+msgid "County name must be unique per city!"
+msgstr "İlçe zaten tanımlanmış!"
+
+#. module: tr_uavt
+#: model:ir.actions.act_window,name:tr_uavt.action_res_country_state_tr
+#: model:ir.ui.menu,name:tr_uavt.menu_uavt_il_list
+msgid "Cities"
+msgstr "İller"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_res_country_state__ilce_count
+msgid "County Count"
+msgstr "İlçe Sayısı"
+
+#. module: tr_uavt
+#: model:ir.model.fields,field_description:tr_uavt.field_res_country_state__ilce_ids
+msgid "Counties"
+msgstr "İlçeler"
